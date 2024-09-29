@@ -129,7 +129,7 @@ for epoch in range(start_epoch, num_epochs):
               f"Loss G: {loss_G.item():.4f}, Loss D A: {loss_D_A.item():.4f}, Loss D B: {loss_D_B.item():.4f}")
 
         # Save some generated samples every 100 steps
-        if i % 100 == 0:
+        if i % 25 == 0:
             save_sample_images(model.gen_A2B, model.gen_B2A, real_A, real_B, epoch + 1, i + 1, 'outputs/images')
 
     # Save model and losses every `save_interval` epochs
