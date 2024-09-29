@@ -1,0 +1,27 @@
+CycleGAN-Horse2Zebra/
+│
+├── data/
+│   ├── horse2zebra/
+│       ├── trainA/    # Horse training images
+│       ├── trainB/    # Zebra training images
+│       ├── testA/     # Horse test images
+│       ├── testB/     # Zebra test images
+│
+├── checkpoints/
+│   └── latest/        # Save models after every 10 epochs
+│
+├── models/
+│   ├── cycle_gan.py   # CycleGAN model implementation
+│   └── networks.py    # Networks (Generators, Discriminators)
+│
+├── utils/
+│   ├── dataset.py     # Code for loading datasets
+│   └── utils.py       # Helper functions
+│
+├── outputs/
+│   ├── images/        # Folder to save generated images during training
+│   └── models/        # Folder to save models after every 10 epochs
+│
+├── train.py           # Script to train the CycleGAN model
+├── test.py            # Script to test the trained model
+└── README.md          # Project documentation
